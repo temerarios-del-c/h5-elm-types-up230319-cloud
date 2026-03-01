@@ -1,4 +1,4 @@
-module module%20Main%20exposing%20%28 exposing (..)module Main exposing (..)
+module Main exposing (..)
 
 import Html exposing (Html, text)
 
@@ -7,7 +7,6 @@ type GradeStatus
     = Approved
     | Failed
     | Pending
-
 
 
 categoricalGrade : List Float -> List GradeStatus
