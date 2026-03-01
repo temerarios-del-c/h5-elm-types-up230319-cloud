@@ -19,7 +19,7 @@ gradeToStatus grade =
     if grade < 0 then
         Pending
 
-    else if grade > 7 then
+    else if grade >= 7 then
         Approved
 
     else
@@ -30,13 +30,13 @@ type AirplaneStatus
     = OnTime
     | Boarding
     | Delayed
-    | Canceled
+    | Cancelled
 
 
 airplaneScheduleAction : AirplaneStatus -> String
 airplaneScheduleAction status =
     case status of
-        Canceled ->
+        Cancelled ->
             "Pedir reembolso"
 
         Delayed ->
@@ -56,4 +56,4 @@ airportAction statuses =
 
 main : Html msg
 main =
-    text "Funciones listas para el examen "
+    text "Funciones listas para el examen"
